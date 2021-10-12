@@ -1,5 +1,6 @@
 {
   "name": "ecommerce-demo",
+  "author": "Adil Arlı",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,7 +13,8 @@
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
-    "vuex": "^3.4.0"
+    "vuex": "^3.4.0",
+    "vue-toast-notification": "^0.6"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
@@ -28,7 +30,11 @@
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-vue": "^6.2.2",
     "prettier": "^2.2.1",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "sass": "^1.32.8",
+    "sass-loader": "^10.1.1",
+    "axios": "^0.22.0",
+    "vue-svg-loader": "^0.16.0"
   },
   "eslintConfig": {
     "root": true,

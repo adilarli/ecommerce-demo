@@ -1,12 +1,16 @@
 import Vue from "vue";
 import App from "./App.vue";
-import router from "./router";
 import store from "./store";
+import router from "./router";
+import VueToast from "vue-toast-notification";
 
-Vue.config.productionTip = false;
+import "vue-toast-notification/dist/theme-sugar.css";
+Vue.use(VueToast, {
+  position: "top",
+});
 
 new Vue({
-  router,
   store,
+  router,
   render: (h) => h(App),
 }).$mount("#app");

@@ -1,0 +1,25 @@
+@use "sass:math";
+
+$raleway: "Raleway";
+$openSans: "Open Sans";
+
+$base-font-size: 16px !default;
+
+// Pixels to ems function
+@function px2em($px) {
+  @return math.div($px, $base-font-size) * 1em;
+}
+
+// Font size and line height mixin
+@mixin font-size($font-size, $line-height: false) {
+  font-size: px2em($font-size); /* #{$font-size} */
+  @if $line-height != false {
+    line-height: math.div($line-height, $font-size); /* #{$line-height} */
+  }
+}
+
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
